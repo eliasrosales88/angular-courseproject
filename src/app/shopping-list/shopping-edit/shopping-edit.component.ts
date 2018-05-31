@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Ingredient } from '../../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list.service';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormArray } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -58,4 +58,6 @@ export class ShoppingEditComponent implements OnInit {
     this.ingredientForm.reset();
     
   }
+
+
 }
