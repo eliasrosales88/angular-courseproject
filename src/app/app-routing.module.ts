@@ -7,6 +7,8 @@ import { patch } from 'webdriver-js-extender';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeDefaultComponent } from './recipes/recipe-default/recipe-default.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
 
 
 
@@ -19,6 +21,8 @@ const appRoutes: Routes = [
         {path:':id', component: RecipeDetailComponent}, 
         {path:':id/edit', component: RecipeEditComponent} 
     ] },
+    { path: 'signup', component: SignupComponent},
+    { path: 'signin', component: SigninComponent},
     { path:'**', component: RecipesComponent }
   ]
 
